@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './uncommon-page.component.css',
 })
 export class UncommonPageComponent {
-  // i18nSelect
+  // #region i18nSelect
   public name: string = 'Sergio';
   public gender: 'male' | 'female' = 'male';
 
@@ -20,7 +20,9 @@ export class UncommonPageComponent {
     this.gender = 'female';
   }
 
-  // i18nPlural
+  //#endregion
+
+  // #region i18nPlural
 
   public clients: string[] = [
     'Sergio',
@@ -38,10 +40,12 @@ export class UncommonPageComponent {
   public clientsMap = {
     '=0': 'no tenemos ningún cliente espereando',
     '=1': 'tenemos 1 cliente esperando',
-    'other': 'tenemos # clientes esperando',
-  }
+    other: 'tenemos # clientes esperando',
+  };
 
   deleteClient(): void {
     this.clients.shift();
   }
+
+  //#endregion
 }
