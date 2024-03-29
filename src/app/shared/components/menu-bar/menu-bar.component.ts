@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'shared-menu',
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css',
+  selector: 'shared-menu-bar',
+  templateUrl: './menu-bar.component.html',
+  styleUrl: './menu-bar.component.css',
 })
-export class MenuComponent implements OnInit {
+export class MenuBarComponent implements OnInit {
   public items: MenuItem[] = [];
 
   //#region Ciclo de vida de Angular
