@@ -15,7 +15,9 @@
 
   <div class="col-12 md:col-6">
 
-    <p-fieldset legend="Plural Pipe" [toggleable]="true">
+    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+      <p>Actualmente {{clients.length | i18nPlural:clientsMap}}.</p>
+      <p-button (click)="deleteClient()" label="Cliente atendido" />
     </p-fieldset>
 
   </div>
