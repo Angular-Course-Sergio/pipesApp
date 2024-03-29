@@ -48,4 +48,14 @@ export class UncommonPageComponent {
   }
 
   //#endregion
+
+  //#region KeyValue
+
+  public person = {
+    name: 'Sergio',
+    age: 24,
+    gender: 'male',
+  };
+
+  //#endregion
 }
