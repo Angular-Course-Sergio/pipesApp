@@ -6,12 +6,14 @@ import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { CustomPageComponent } from './pages/custom-page/custom-page.component';
 
 @NgModule({
   declarations: [
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonPageComponent,
+    CustomPageComponent,
   ],
   imports: [CommonModule, ProductsRoutingModule, PrimeNgModule],
 })
